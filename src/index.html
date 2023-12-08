@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOS ANGELES MOUNTAINS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+</head>
+<body>
+    <!--Nav Bar-->
+    <header>
+        <div class="logo">
+            <img src="./images/logo.png" alt="LosAngeles Mountains Website Logo" class="responsiveheaderlogo">
+        </div>  
+
+        <div class="navigation">
+            <input type="checkbox" id="nav-checkbox">
+            <label for="nav-checkbox" class="nav-toggle">
+                <img src="./images/open.png" alt="Menu Icon" class="open">
+                <img src="./images/close.png" alt="Close Icon" class="close">
+            </label>
+
+            <ul class="nav-menu">
+                <li><a a class="nav-link" href="#History">01. HISTORY</a></li>
+                <li><a a class="nav-link" href="#Schedule">02. TEAM</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+
+    <section id="Home">
+        <!-- Title behind the mountains image -->
+        <div id="losangelestxt"><h1>LOS ANGELES</h1></div><br>
+        <div id="mountainstxt"><h2>MOUNTAINS</h2></div>
+        
+        <!-- Background Sky Image -->
+        <img src="./images/background-PhotoRoom.png-PhotoRoom.png" id="Mountain" alt="Static Background Blue Sky Image">
+    </section>
+
+    <!--History Section Text-->
+    <section id="History">
+        <div class="grouping">
+            <div class="tbheader">
+              <div class="cell01">01 </div>
+              <div class="cell02">HISTORY</div>
+            </div>
+            <div class="rowGroup">
+              <div class="row">
+                <div class="cell01"><!-- Empty space --></div>
+                <div class="cell03">.</div>
+              </div>
+            </div>
+        </div>
+        <div class="historytxt"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+
+        <!--Carousel Section-->
+        <div id="container">
+                <div id="slider-container">
+                  <span onclick="slideRight()" class="btn"> </span>
+                    <div id="slider">
+                      <div class="slide"><span><img src="./images/caraouselimg1.jpg" alt=""></span></div>
+                      <div class="slide"><span><img src="./images/caraouselimg2.jpg" alt=""></span></div>
+                      <div class="slide"><span><img src="./images/caraouselimg1.jpg" alt=""></span></div>
+                      <div class="slide"><span><img src="./images/caraouselimg2.jpg" alt=""></span></div>
+                      <div class="slide"><span><img src="./images/caraouselimg1.jpg" alt=""></span></div>
+                      <div class="slide"><span><img src="./images/caraouselimg2.jpg" alt=""></span></div>
+                      <div class="slide"><span><img src="./images/caraouselimg1.jpg" alt=""></span></div>
+                      <div class="slide"><span><img src="./images/caraouselimg2.jpg" alt=""></span></div>
+                  </div>
+                  <span onclick="slideLeft()" class="btn"></span>
+                </div>
+              </div> 
+    </section>
+    <!--Schedule Section Text-->
+    <section id="Schedule">
+        <div class="grouping">
+            <div class="tbheader">
+              <div class="cell01">02 </div>
+              <div class="cell02">CLIMB</div>
+            </div>
+            <div class="rowGroup">
+              <div class="row">
+                <div class="cell01"><!-- Empty space --></div>
+                <div class="cell03">.</div>
+              </div>
+            </div>
+        </div>
+        <div class="historytxt"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2></div>
+
+
+        <!--Schedule Table-->
+        <div id="schedule-table">
+            <table>
+                <thead>
+                  <tr>
+                    <th scope="col">SCHEDULE</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Date">25 Nov 2016</td>
+                    <td data-label="Area">Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Date">28 Nov 2016</td>
+                    <td data-label="Area">Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Date">18 Dec 2016</td>
+                    <td data-label="Area">Vestibulum viverra</td>
+                  </tr>
+                  <tr>
+                    <td scope="row" data-label="Date">7 Jan 2017</td>
+                    <td data-label="Area">Vestibulum viverra</td>
+                </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </section>
+    
+    <!--Footer Section-->
+    <footer>
+        <div class="footer">
+            <div class="footer">
+                <img src="./images/logo.png" alt="LosAngeles Mountains Website Logo" class="responsivefooterlogo">
+            </div>
+            
+            <div class="footer_txt">
+                <p>COPYRIGHT 2016. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).bind('scroll', function() {
+                var gap = 50;
+                if ($(window).scrollTop() >= gap) {
+                    $('header').addClass('active');
+                } else {
+                    $('header').removeClass('active');
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+<!-- 
+    BIG TEXT COLOR = #9fa7b6
+    FOOTER COLOR = #404f6c
+    FOOTER TEXT = #5c6f96
+    LOS ANGELES TEXT = #4d4d4d
+    MOUNTAINS DARK = #283245
+-->
